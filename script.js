@@ -15,5 +15,5 @@ if (x){
     fromTo(name, 2, {opacity: "0"}, {opacity: "1", ease: Power2.easeInOut}, "-=0.5");
 
 }else {
-
+    console.log('Hello');
 }
