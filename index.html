@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- 
+        What I need to do moving forward
+        - Add sick cool animations that make the website more dynamic
+        - publish the website online
+        - Add picture of myself
+        -Review ALL CONTENT
+        - link my resume + finish my resume
+        - make a blog
+     -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Akinori Kimura</title>
+        <link rel="stylesheet" href="./style.css" type="text/css">
+        <!-- Montserrat font -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <!-- Kaushan Script font -->
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <!-- Playfair Display font -->
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <aside id="navigation">
+            <figure>
+                <div id="logo"></div>
+                <div id="nameBar">Akinori Kimura</div>
+            </figure>
+            <img src="./image/Menu.svg" id="menuIcon">
+            <img src="./image/id=menuIconTablet.svg" id="menuIconTablet" alt="">
+            <div class="resumeBox">
+                    <a  href="#" class="cta">my Resume</a>
+            </div>
+            <footer class="contactInfo">
+                <a href="https://www.facebook.com/akinori.kimura.18" id="facebook"><img src="./image/facebookIcon.png" alt="" class="button"></a>
+                <a href="https://www.linkedin.com/in/akinori-kimura-5462aa17b/" id="linkedIn"><img src="./image/linkedIn Icon.svg" alt="" class="button"></a>
+                <a href="https://github.com/1999akinori" id="github"><img src="./image/github icon.svg" alt="" class="button"></a>
+            </footer>
+            <nav>
+                <ul class="">
+                    <li><a href="#header" class="navtab"> About Me</a></li>
+                    <li><a href="#experience" class="navtab">Experience</a></li>
+                    <li><a href="#projects" class="navtab">Projects</a></li>
+                    <li><a href="#education" class="navtab">Education</a></li>
+                    <li><a href="#contact" class="navtab">Contact</a></li>
+                </ul>
+            </nav>
+        </aside>
+        
+        <main>
+            <div id="header">
+                    <div id="name">Akinori Kimura</div>
+                    <div id="profilePicture"></div>
+                    <div id="selfTitle"> Ambitious Student <br> Creative Problem Solver <br>Passionate Learner</div>
+                    <div id="intro">
+                            Hello there, I'm <strong>Akinori</strong>, but you can call me Aki. Currently, I study <strong>electrical engineering</strong> at the
+                            <strong>University of Toronto</strong>. Recently, as an intern at <strong>Parque Metropolitano</strong> in Santiago, Chile, I helped
+                            educate the youth on environmental issues and worked in the organization of events. As an engineer, I am
+                            interested in the latest tech, the fields of sustainable development and bio-inspired design.
+                    </div>
+                    <div class="resumeBox" id="inDocResume1">
+                        <a  href="#" class="cta">my Resume</a>
+                    </div>
+            </div>
+            <div id="body">
+                    <div id="blog" class="subsection">
+                        <h2>Blog</h2>
+                        <div id="flexbox">
+                            <div class="description">
+                             <a href=""></a><img src="./image/chilePhoto.jpg" alt=""></a>  <!-- image & link-->
+                                    <div class="subsectionContent">
+                                        <h3>My 3 months Chile experience</h3>
+                                        <p>
+                                        While I was at university, my parents told me that they were moving to Chile. 
+                                        I knew nothing about Chile, or for that matter, anyone except my family, 
+                                        but I was thrilled to spend my summer there. Checkout what I learned about Chile in the 3 months I was thre.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="experience" class="subsection">
+                            <h2>Experience</h2>
+                            <div id="exp1" class="description">
+                                <a href="http://www.parquemet.cl/bosque-santiago"><img src="./image/parqueMet.svg" alt=""></a>  <!-- image & link-->
+                                <div class="subsectionContent">
+                                    <h3>Parque Metropolitano</h3>
+                                    <h4>Intern <br> Summer 2019, Santiago Chile</h4>
+                                    <p>This internship was a great opportunity to hone my communication skills, apply my Spanish in business setting, and learn about Chilean culture. As an intern,
+                                         I worked along with the professors to educate the youth on environmental issues and with local Chileans for the preparation
+                                        for the inauguration of the <em>Museo de la Vivienda Tradicional Local</em>. In addition, I was responsible for translating workshop manuals
+                                        from Spanish to English and capturing photos to be used for promotional purposes. 
+                                    </p>
+                                </div>
+                                <!-- <div class="cta2"><a>read more</a></div> -->
+                            </div>
+                            <div id="exp2" class="description">
+                                    <img src="./image/kevin-koe.jpg" alt=""> <!-- image & link-->
+                                    <div class="subsectionContent">
+                                        <h3>Hong Kong Curling Team Design Project</h3>
+                                        <h4>Team Leader <br>Winter 2019, Toronto Canada</h4>
+                                        <p>
+                                            Our engineering team was asked to come up with a design that measures curling 
+                                            stone rotation for the Hong Kong Curling Team. Through proper engineering practice, we generated documents that demonstrated our
+                                            decomposition of the problem and our proposed solution. At the end, we delivered a final presentation with prototype testing. 
+                                        </p>
+                                    </div>
+                                   <!-- <div class="cta2"><a>read more</a></div> -->
+                            </div>
+                            <!-- How to add experience
+                                <div id="exp1" class="expDescription">
+                                 <a href="#"></a>
+                                <h3>Parque Metropolitano</h3>
+                                <h4>Intern</h4>
+                                <h4>May-June 2019</h4>
+                                <p>Parque Metropolitano is the largest urban public park in South America, located at Santiago, Chile. As an intern, at the Bosque Santiago 
+                                    sector, I worked along with the professors to educate the youth on environmental issues and with local Chileans for the preparation
+                                    and inauguration of the <em>Museo de la Vivienda Tradicional Local</em>. In addition, I was responsible for translating workshop manuals
+                                    from Spanish to English and capturing photos to be used for promotional purposes. 
+                                </p>
+                            </div> -->
+                        </div>
+                        <div id="projects" class="subsection">
+                            <h2>Projects</h2>
+                            <div id="website" class="description">
+                                <img src="./image/webdevImage.jpeg" alt="">
+                                <div class="subsectionContent">
+                                    <h3>Personal Website</h3>
+                                    <h4>Summer 2019</h4>
+                                    <p>
+                                         Using html, css, and javascript, I made the website you are on right now. The website dynamically adjusts for mobile, tablet, 
+                                         and computer view with CSS grid. The design aspect of the web page
+                                    </p>
+                                </div>
+                            </div>
+                            <div id="reversi" class="description">
+                                <img src="./image/othelloImage.png" alt="">
+                                <div class="subsectionContent">
+                                    <h3>Reversi Algorithm</h3>
+                                    <h4>April 2019</h4>
+                                     <p>
+                                         Using the c programming language, I coded an algorithm that is able to make a decision based on parameters such as 
+                                         mobility, corners, edge, and disk minimization. My code was able to beat smarter and smartest algorithm, which were 
+                                         provided by the APS105 course. 
+                                  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="education" class="subsection">
+                                <h2>Education</h2>
+                                <div id="edu1" class="description">
+                                    <img src="./image/uoftImage.jpg" alt="">  <!-- image & link-->
+                                    <div class="subsectionContent">
+                                        <h3>University of Toronto</h3>
+                                        <h4>Electrical Engineering<br>Class of 2022</h4>                        
+                                        <p>
+                                            As TrackOne student, I had an amazing first year experience. I learned a lot about both engineering and myself. Some of
+                                            the courses I enjoyed the most were dynamics, electrical fundamentals, and mechanics. Outside of class, I was involved in the formula 
+                                            racing team, toastmasters, and taekwondo. I chose electrical engineering because I am fascinated by its courses and I want to be able to design 
+                                            with complex circuits and sensors.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div id="edu2" class="description">
+                                        <img src="./image/cds.png" alt=""> <!-- image & link-->
+                                        <div class="subsectionContent">
+                                            <h3>The Country Day School</h3>
+                                            <h4>San Jose, Costa Rica<br>Graduated 2018</h4>
+                                            <p>
+                                                This was where I truely learned to enjoy learning.
+                                                I ended up graduating with the fourth highest GPA in the grade, recieving the Franklin Chang Award for Chemistry and Outstanding Achievement
+                                                Awards in AP Physics 1, AP Chemistry, and AP Calculus BC. Outside of class, I played in the varsity basketball team and the ultimate frisbee team.
+                                                I grew a lot through sports as an individual and a leader, especially in the international AASCA tournaments.
+                                                I also frequently volunteered for a girls orphanage called Hogar Montial. 
+                                            </p>
+                                        </div>
+                                </div>
+                                <!-- How to add experience
+                                    <div id="exp1" class="expDescription">
+                                     <a href="#"></a>
+                                    <h3>Parque Metropolitano</h3>
+                                    <h4>Intern</h4>
+                                    <h4>May-June 2019</h4>
+                                    <p>Parque Metropolitano is the largest urban public park in South America, located at Santiago, Chile. As an intern, at the Bosque Santiago 
+                                        sector, I worked along with the professors to educate the youth on environmental issues and with local Chileans for the preparation
+                                        and inauguration of the <em>Museo de la Vivienda Tradicional Local</em>. In addition, I was responsible for translating workshop manuals
+                                        from Spanish to English and capturing photos to be used for promotional purposes. 
+                                    </p>
+                                </div> -->
+                        </div>
+            </div>
+            
+                    <div id="aboutme" class="subsection">
+                            <div id="aboutmeIntro">
+                                    <h2>More about me...</h2>
+                                <p>All my passions and aspirations can be generalized into three words: observe, understand, and change</p>
+                            </div>
+                            <div id="observe" class="verb">
+                                <h3>Observe</h3>
+                                <p>I come from a family that moves frequently, so I have been lucky enough to live in and observe 7 different 
+                                    countries: Swizterland, Peru, Japan, Nepal, Costa Rica, Canada, and Chile. Since I was a kid, I've had a fascination with insects, 
+                                    especially beetles, obsessing over their armor-like body and unique behavior. 
+                                    My love for nature and wildlife, has led me to my recent attempt 
+                                    to capture my observation through <a href="./photogallery.html">photography</a>. My attention to detail and observation 
+                                    are also portrayed in my drawings.</p>
+                            </div>
+                            <div id="observeImage" class="aboutmeImage">
+                                <img src="./image/observeImage.JPG">
+                            </div>
+                            <div id="understand" class="verb">
+                                <h3>Understand</h3>
+                                <p>
+                                    What I observe with my eyes, I try to understand.
+                                    My drive for learning and constant curiosity makes not knowing very very uncomfortable. Perhaps it is why physics has 
+                                    been my favorite course. Sharing my understanding through teaching gives me great fullfillment.
+                                    As I have grown, I have gained more of an appreciation for the unique cultures of countries around the world. 
+                                    The desire to understand these different cultures has added a new level of enjoyment to travelling and has motivated my 
+                                    desire to become fluent in Spanish and learn many other languages in the future.
+                                </p>
+                            </div>
+                            <div id="understandImage">
+                                <img src="image/understandImage.JPG" >
+                            </div>
+                            <div id="change" class="verb">
+                                <h3>Change</h3>
+                                <p>
+                                    I feel like my whole life has prepared me to adapt to external change. As I changed countries, I've had to make new connections, learn a new language,
+                                    adapt to a completely new culture, give up on good Japanese food, give up on good wifi, and more. While I still have fears and 
+                                    anxiety about change, I am confident I will find a solution to whatever difficulty I may face.
+                                    Internally, I am always looking to improve myself. The growth I made through my fitness journey, kickstarted my obssession for learning and self-improvement.
+                                    I chose engineering because I want to be an agent of positive change. While it may be 10-20 years down the line, I want to see my design and innovation change lives.
+                                </p>
+                            </div>
+                            <div id="changeImage">
+                                <img src="image/changeImage.JPG" >   
+                            </div>
+                        </div>
+            
+            <div id="contact">
+                <h2>Let's start a conversation</h2>
+                <p>
+                    Feel free to reach out through linkedIn or facebook messenger. You can also checkout more about me with my resume and github.
+                </p>
+                <div id="inDocResume2">
+                        <a  href="#" class="cta3">my Resume</a>
+                </div>
+                <div class="contactIcon">
+                    <a href="https://www.facebook.com/akinori.kimura.18" id="facebook"><img src="./image/facebookIcon.png" alt="" class="button"></a>
+                    <a href="https://www.linkedin.com/in/akinori-kimura-5462aa17b/" id="linkedIn"><img src="./image/linkedIn Icon.svg" alt="" class="button"></a>
+                    <a href="https://github.com/1999akinori" id="github"><img src="./image/github icon.svg" alt="" class="button"></a>
+                </div>
+                <div id="whitespace"></div>
+            </div>
+            
+        </main>
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" 
+    integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js" 
+    integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk=" crossorigin="anonymous"></script>
+    <script src=script.js></script>
+    <script src="./js files/button.js"></script>
+    <script src="./js files/navigation.js"></script>
+</html>

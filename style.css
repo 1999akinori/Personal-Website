@@ -1,0 +1,1098 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a img{
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url("font/raleway-regular-webfont.woff")format("woff"),
+        url("font/raleway-regular-webfont.woff2")format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    background:  #1C439E;
+background: linear-gradient(45deg, #EDCB13 0%, #1C439E 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-attachment: fixed;
+    position: fixed;
+    width: 100%;
+}
+
+p a{
+    /* link to another page */
+    color: skyblue;
+}
+
+aside{
+    color: #fff;
+    display: grid;
+    grid-template-columns: auto 50px;
+    width: 100%;
+    padding: 1em;
+}
+
+#menuIcon{
+    cursor:pointer;
+    position: relative;
+    top:13%;
+    width: 40px;
+    height: auto;
+}
+
+#menuIconTablet{
+    display:none;
+}
+
+#logo{
+    display: none;
+}
+
+#nameBar{
+    color: #fff;
+    grid-column: 1/2;
+    font-size: 27px;
+    font-weight: 600;
+    margin: 0 0 0 5px;
+    font-family: 'Kaushan Script','ralewayregular', 'Arial', sans-serif;
+}
+
+aside .resumeBox{
+    display: none;
+}
+.navtab{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    line-height: 2.4;
+    font-size: 17px;
+}
+
+#navigation li{
+    list-style: none;
+    display: block;
+    padding: 5px;
+    margin: 0;
+    z-index: 100;
+    font-family: 'ralewayregular', 'Arial', sans-serif;
+    background-color: none;
+}
+
+.active{
+    text-align: left;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    background-color:#E0E6FF;
+    display: block;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+}
+
+ul{
+    display: none; 
+    /* This allows it so that the lists don't show up if the class  'active' is removed from the html */
+    /*The reason that this does not make the list disappear when the class is 
+    there is because ul is less specific css than calling it by the class name. So in that case it doesn't apply display
+    none at all */
+}
+
+main{
+    background-color: white;
+    font-family: 'ralewayregular', 'Arial', sans-serif;
+    position: fixed;
+    width: 100%;
+    top: 8.5%;
+    left:0%;
+    height: 91.5%;
+    overflow-y: scroll; 
+    overflow-x: hidden; 
+}
+
+.subsection h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: 'Kaushan Script','ralewayregular', 'Arial', sans-serif;
+}
+
+#name{
+    display:none;
+}
+
+#selfTitle{
+    color: #1C439E;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 2;
+    font-family: 'Kaushan Script';
+    letter-spacing: 2px;
+    word-spacing: 2px;
+}
+
+.resumeBox{
+    height: 8%;
+    text-align: center;
+}
+
+
+
+#header{
+padding-top: 1.4em;
+padding-bottom: 3.4em;
+}
+
+/* Picture of myself */
+
+#profilePicture {
+    background-color:rgb(223,219,219);    
+    height: 310px;
+    width: 220px;
+    position: relative;
+    margin: 0px auto;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    z-index: 20;
+}
+
+#miniBio p{
+    text-align: left;
+    font-size: 10px;
+    font-style: italic;
+    margin: 10px auto;
+    width: 220px;
+}
+
+
+#intro{
+    position: relative;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 2.0em;
+    padding-top: 1em;
+    margin: 5px auto;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 40px;
+}
+
+/* Description */
+
+.description{
+    margin: 30px 0;
+}
+
+.description h3{
+    margin: 5px 40px;
+    color: #1C439E;
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+
+.description h4{
+    margin: 5px 40px;
+    color: #BF8308;
+    font-size: 16px;
+}
+
+.description p{
+    margin: 10px 40px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.description img{
+    margin: 10px auto;
+    display: block;
+    height: 200px;
+    width: 300px;
+    left: 0;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+    object-fit: cover;
+}
+
+/* Blog */
+#blog{
+    height: auto;
+    background: #f1f1f9;
+    display:none;
+}
+
+#blog h2{
+    padding:25px 0; 
+    margin: 0;
+}
+
+#flexbox{
+    display: flex;
+    overflow-x: scroll;
+}
+
+#flexbox .description{
+    margin-top: 5px;
+}
+
+#flexbox .description img{
+    margin: 10px auto; /*margin: 10px 10px;*/
+    margin-top: 0;
+    display: block;
+    height: 150px;
+    width: 300px;
+    left: 0;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    object-fit: cover;
+}
+
+#flexbox .description h3{
+    font-size: 18px;
+    margin: 10px 40px; /* margin: 10px 20px; */
+}
+
+#flexbox .description p{
+    margin: 10px 40px; /* margin: 10px 20px; */
+}
+
+
+
+/* Experience */
+
+#experience{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: #F4F4F4;
+}
+
+.subsection h2{
+    text-align: center;
+}
+
+/* Projects */
+#projects{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #E7E7E7;
+}
+
+/* Education */
+#education {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #DEDEDE;
+}
+
+.cta {
+    background-color: rgb(19,119,232);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin: 2.4em auto;
+    width: 225px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    top: 8%;
+    box-shadow: none;
+    transition: padding 1s;
+}
+
+.cta:hover{
+    padding: 10px 60px;
+}
+
+
+.cta2 {
+    background-color: rgb(66, 29, 162);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 10px;
+    margin: 50px auto;
+    width: 150px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.cta3 {
+    background-color: rgb(19,119,232);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 40px;
+    margin: 2.4em;
+    width: 225px;
+    position: relative;
+    text-align: center;
+    border-radius: 4px;
+    cursor: pointer;
+    top: 20px;
+}
+
+/* aboutme */
+
+#aboutme{
+    position: relative;
+    bottom: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Playfair Display','ralewayregular', 'Arial', sans-serif;
+}
+
+#aboutmeIntro p{
+    text-align: center;
+    padding: 2.4em;
+    font-style: italic;
+}
+
+#aboutme h3{
+    font-style: bold;
+    position: relative;
+    padding: 0 1.9em;
+    margin: 0;
+    position: relative;
+    left:0;
+    bottom:0;
+    font-family: 'Playfair Display','ralewayregular', 'Arial', sans-serif;
+    font-size: 23px;
+    width: fit-content;
+}
+
+#aboutme p{
+    position: relative;
+    padding: 2.4em;
+    margin: 0 auto;
+    position: relative;
+}
+
+.aboutmeImage{
+    margin: 0 auto;
+}
+
+.verb{
+    padding-top:2.4em;
+    padding-bottom:2.4em;
+    margin: 0;
+}
+
+#aboutme .verb p{
+    padding: 1.4em 2.4em;
+    font-size: 13px;
+    line-height: 1.8;
+    max-height: 100%;
+}
+
+#aboutme img{
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: auto auto;
+    top: 0;
+    position: relative;
+    object-fit: cover;
+}
+
+#observe{
+    background-color: #0B286A;
+    color: #FFF;
+}
+
+#observeImage{
+    background-color:   #0B286A;
+    width: 100%;
+}
+
+#understand{
+    background-color: #FFE65D;
+    color: #000;
+}
+
+#understandImage{
+    background-color: #FFE65D;
+}
+
+#change{
+    background-color: #FFC95D;
+    color: #000;
+}
+
+#changeImage{
+    background-color:#FFC95D;
+}
+
+#contact{
+    position: relative;   
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#contact h2{
+    margin: 20px 0;
+    font-family: 'Kaushan Script','ralewayregular', 'Arial', sans-serif;
+    font-size: 28px;
+}
+
+#contact p{
+    margin: 2.4em;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.contactInfo{
+    position: fixed;
+    width: 100%;
+    height: 7.5%;
+    left:7%;
+    top: 91.5%;
+    display: none;
+    grid-template-columns: 33.333% 33.3333% 33.333%;
+}
+
+.contactIcon{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: grid;
+    left: 6.5%;
+    top: 50px;
+    grid-template-columns: 33.333% 33.3333% 33.333%;
+}
+
+ .contactInfo a, .contactIcon a{
+     width: 50px;
+     height: 50px;
+     left:0;
+     margin: 5px;
+     cursor: pointer;
+ }
+
+.contactInfo a img, .contactIcon a img{
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 1000px;
+}
+
+#facebook{
+    display: grid;
+    grid-column: 1;
+
+}
+
+#linkedin{
+    display: grid;
+    grid-column: 2;
+}
+
+#github{
+    display: grid;
+    grid-column: 3;
+}
+
+#whitespace{
+    height: 100px;
+}
+
+/* Tablet view */
+@media (min-width: 650px){ 
+    /* small adjustments */
+    ::-webkit-scrollbar {
+        width:0;
+        background: transparent;
+        /* This will make the scroll bar transparent */
+    }
+
+    aside img{
+        top:20%;
+    }
+
+    .contactInfo a img{
+        left:36%;
+    }
+
+    #nameBar{
+        display:none;
+    }
+
+    #menuIcon{
+        display:none;
+    }
+
+    #menuIconTablet{
+        display:block;
+        cursor:pointer;
+        position: relative;
+        top:13%;
+        width: 60px;
+        height: auto;
+        z-index:10000;
+        padding: auto;
+    }
+
+    .contactInfo {
+        position: fixed;
+        left: 12%;
+        top: 92.5%;
+    }
+
+    /* Layout of page with CSS grid */
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "head"
+            "body"
+            "leg"
+            "foot";
+        width: 100%;
+        top: 0;
+        left:0%;
+        height: 100%;
+    }
+
+    
+
+    /* Grid for the header section Nested grid*/
+    #header{
+        grid-area: head;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+        "name profile"
+        "Intro profile"
+        "Intro profile"
+        "resume title";
+    }
+
+    #name{
+        grid-area: name;
+        display: block;
+        font-family: 'Kaushan Script','ralewayregular', 'Arial', sans-serif;
+        font-size: 60px;
+        text-align: center;
+        padding: 20px;
+        padding-top: 40px;
+        white-space: nowrap;
+    }
+
+    #profilePicture{
+        grid-area: profile;
+        top: 15%;
+    }
+
+    #intro{
+        grid-area: Intro;
+    }
+
+    .resumeBox{
+        grid-area: resume;
+    }
+
+    #selfTitle{
+        grid-area: title;
+    }
+    
+    /* Grid for the body section */
+    #body{
+        grid-area: body;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "exp proj"
+        "exp edu"; /*"blog edu"*/
+    }
+
+    #experience{
+        grid-area: exp;
+    }
+
+    #projects{
+        grid-area: proj;
+    }
+
+    #education{
+        grid-area: edu;
+    }
+
+    #blog{
+        grid-area: blog;
+    }
+
+    /* Grid for the aboutme section */
+
+
+
+    #aboutme{
+        grid-area: leg;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 20% 25% 25% 30%;
+        grid-template-areas: 
+        "aboutme aboutme"
+        "observe obsImg"
+        "undImg understand"
+        "change chImg";
+    }
+
+    #aboutme .verb p {
+        padding: 1.4em 2.4em;
+        font-size: 13px;
+        line-height: 1.8;
+        max-height: 100%;
+    }
+
+    #aboutme h3 {
+        padding: 0 1.9em;
+        margin: 0;
+        font-size: 18px;
+        width: fit-content;
+    }
+
+    #aboutmeIntro{
+        grid-area: aboutme;
+    }
+
+    #observe{
+        grid-area: observe;
+    }
+
+    #observeImage{
+        grid-area: obsImg;
+    }
+
+    #understand{
+        grid-area: understand;
+    }
+
+    #understandImage{
+        grid-area: undImg;
+    }
+
+    #change{
+        grid-area: change;
+    }
+
+    #changeImage{
+        grid-area:chImg;
+    }
+
+    #aboutme img{
+        max-height: 100%;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+        display: block;
+        margin: auto auto;
+        top: 0;
+        position: relative;
+    }
+
+    .aboutmeImage{
+        display: block;
+        grid-column: 2/2;
+    }
+
+    #aboutmeIntro h2{
+        font-size: 45px;
+    }
+
+    #aboutmeIntro p{
+        font-size: 20px;
+        max-width: 600px;
+        margin: 30px auto;
+    }
+
+    #observeImage img{
+        position: relative;
+        top: 0;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+    }
+
+    #understandImage img{
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+    }
+
+    #changeImage img{
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+    }
+
+    /* Grid for contact */
+
+    #contact{
+        grid-area: foot;
+        grid-template-rows: 1fr  1fr 1fr;
+        grid-template-areas: 
+        "title"
+        "description"
+        "resume";
+    }
+
+    #contact h2{
+        grid-area: title;
+        font-size: 35px;
+    }
+
+    #contact p{
+        grid-area: description;
+        font-size: 20px;
+    }
+
+    .cta3{
+        padding: 20px 80px;
+        font-size: 20px;
+    }
+
+    .contactIcon{
+        left:11%;
+        top: 16%;
+    }
+
+    .contactIcon a{
+        height:60px;
+        width: 60px;
+    }
+
+    .contactIcon a img{
+        height:60px;
+        width: 60px;
+    }
+
+}/* media 700px  */
+
+/* iPhone SE / 5 */
+@media screen and (max-width: 325px){
+    #nameBar{
+        font-size: 21px;
+    }
+
+    #menuIcon{
+        height: 20px;
+        position: relative;
+        left: 15px;
+    }
+}
+
+@media screen and (min-width: 950px){
+    body{
+        padding:2.0em;
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-template-areas: "aside main";
+    }
+
+    
+    ul{
+        display:block;
+    }
+
+    aside{
+        background-color: white;
+        position: relative;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        grid-area: aside;
+        display: grid;
+        grid-template-rows: 30% 40% 15% 15%;
+        grid-template-columns: 1fr;
+        padding: 0;
+        grid-template-areas: "name" "nav" "resume" "contact";
+    }
+
+
+    aside figure{
+        grid-area: name;
+        width: 100%;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    aside .resumeBox{
+        display: inline-block;
+        white-space: nowrap;
+        grid-area: resume;
+        width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 225px;
+    position: relative;
+    top: 50%;
+    }
+
+    footer{
+        display:block;
+    }
+
+    .contactInfo{
+        grid-area: contact;
+        position: relative;
+        display: grid;
+        width: 100%;
+        height: 7.5%;
+        left: 5.5%;
+        top: 10%;
+    }
+
+    
+     .contactInfo a{
+         width: 40px;
+         height: 40px;
+     }
+    
+    .contactInfo a img{
+        height: 40px;
+        width: 40px;
+    }
+    figure{
+        text-align: center;
+    }
+
+    #logo{
+        border-radius: 50%;
+        background: skyblue;
+        width: 50px;
+        height:50px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 20%;
+    }
+
+    #header{
+        grid-area: head;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "name profile"
+        "Intro profile"
+        "Intro title";
+    }
+
+    #profilePicture{
+        grid-area: profile;
+        top: 10%;
+    }
+
+    #selfTitle{
+        grid-area: title;
+    }
+
+    #nameBar{
+        display:block;
+        color: black;
+        position: relative;
+        top: 35%;
+    }
+
+    #menuIcon{
+        display: none;
+    }
+
+    #menuIconTablet{
+        display:none;
+    }
+
+    #navigation li {
+        padding: 5px;
+        font-size: 12px;
+        margin: 0;
+    }
+
+    .navtab {
+        font-weight: 200;
+        line-height: 2.0;
+        font-size: 15px;
+        position: relative;
+        left: 13%;
+    }
+
+    nav{
+        padding: 10px 0;
+    }
+
+    .cta{
+        top:0;
+    }
+
+    main{
+        grid-area: main;
+        width: 100%;
+        top: 0;
+        left:0;
+        height: 100%;
+    
+        background-color: white;
+        position: relative;
+    }
+
+    #body{
+        grid-area: body;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: /*300px*/ auto auto auto;
+        grid-template-areas: 
+        /* "blog" */
+        "exp"
+        "proj"
+        "edu";
+    }
+
+    .description{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img descriptionContent";
+    }
+
+    .description img{
+        grid-area: img;
+    }
+
+    .subsectionContent{
+        grid-area: descriptionContent;
+    }
+    
+        ::-webkit-scrollbar {
+            width:0;
+            background: transparent;
+            /* This will make the scroll bar transparent */
+        }
+
+     #selfTitle{
+        position: relative;
+        top: 15%;
+    }
+
+    #intro {
+        font-size: 16px;
+        line-height: 2;
+        padding: 2.0em;
+        padding-top: 1em;
+        margin: 5px auto;
+        position: relative;
+        bottom: 0;
+        margin-bottom: 40px;
+        left: 7%;
+    }
+   
+    #inDocResume1{
+        display: none;
+    }
+
+    #inDocResume2{
+        display: none;
+    }
+
+    #aboutme{
+        grid-area: leg;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-areas: 
+        "aboutme aboutme"
+        "observe obsImg"
+        "undImg understand"
+        "change chImg";
+    }
+
+    #aboutmeIntro p{
+        font-size: 20px;
+        max-width: 600px;
+        margin: 50px auto;
+    }
+
+    #aboutme .verb p {
+        padding: 1.4em 2.4em;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    #aboutme h3 {
+        padding: 0 1.9em;
+        margin: 0;
+        position: relative;
+        font-size: 23px;
+    }
+
+    #observeImage img{
+        position: relative;
+        top: 0;
+        width: 100%;
+        float:right;
+    }
+
+    #understandImage img{
+        position: relative;
+    }
+
+    #changeImage img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    #contact{
+        height: 300px;
+    }
+
+    #contact h2{
+        grid-area: title;
+        font-size: 35px;
+    }
+
+    #contact p{
+        grid-area: description;
+        font-size: 20px;
+    }
+
+    .contactIcon{
+        display: none;
+    }
+}
+

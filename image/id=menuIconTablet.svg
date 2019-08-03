@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="39" viewBox="0 0 60 39">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="60" height="39" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.416" y1="2.694" x2="0.718" y2="0.759" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#edcb13"/>
+      <stop offset="1" stop-color="#1c439e"/>
+    </linearGradient>
+  </defs>
+  <g id="id_menuIconTablet_" data-name="id=&quot;menuIconTablet&quot;" clip-path="url(#clip-path)">
+    <g transform="translate(-310 -25)">
+      <rect id="長方形_28" data-name="長方形 28" width="36" height="22" transform="translate(249 11)" fill="url(#linear-gradient)"/>
+      <path id="パス_6" data-name="パス 6" d="M0,0H47V5.843H0Z" transform="translate(310 25)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="translate(-310 -12)">
+      <rect id="長方形_28-2" data-name="長方形 28" width="36" height="22" transform="translate(249 11)" fill="url(#linear-gradient)"/>
+      <path id="パス_6-2" data-name="パス 6" d="M0,0H47V5.843H0Z" transform="translate(310 25)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="translate(-310 1)">
+      <rect id="長方形_28-3" data-name="長方形 28" width="36" height="22" transform="translate(249 11)" fill="url(#linear-gradient)"/>
+      <path id="パス_6-3" data-name="パス 6" d="M0,0H47V5.843H0Z" transform="translate(310 25)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
