@@ -1,15 +1,25 @@
 //Create a function that allows the user to click the menu and nav pops up
 let menu = document.querySelector('ul');
-let menulink = document.querySelector('img'); //Menu Icon
-let menulinkTablet = document.querySelector('#menuIconTablet');
+let icon = document.querySelector('#burger');
+console.log(menu.classList);
+
 
 const popUpSideBar = function(e) {
-    menu.classList.toggle('active'); //add the id or remove it
-    e.preventDefault(); //prevents the browser from reloading(
+    //Separate function for when activating and deactivating sidebar
+    if(menu.classList[0] === "active"){
+        menu.style.animation = "navDisappear 0.4s ease forwards"
+        setTimeout(function(){menu.classList.toggle('active')}, 400); //waits for the animation to complete
+        e.preventDefault();
+        // forwards keeps the changes the animation creates
+    }else{
+        menu.classList.toggle('active');
+        menu.style.animation = "navAppear 0.7s ease forwards" 
+        e.preventDefault(); //prevents the browser from reloading
+    }
+
 }
 
-menulink.addEventListener('click', popUpSideBar);
-menulinkTablet.addEventListener('click', popUpSideBar);
+icon.addEventListener('click', popUpSideBar);
 
 
 //navigation tab effects
@@ -26,6 +36,7 @@ navtab.forEach(function(element){
 });
 
 //Boldness effect on the navigation bar
+/*
 let theClickedOne;
 
 let a = document.querySelectorAll('a');
@@ -40,4 +51,4 @@ for(let i=0; i<a.length;i++){
         }
         a[i].style.fontWeight = "bold";
     }
-}
+}*/

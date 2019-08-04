@@ -29,6 +29,9 @@ background: linear-gradient(45deg, #EDCB13 0%, #1C439E 100%);
     background-attachment: fixed;
     position: fixed;
     width: 100%;
+    display: grid;
+    grid-auto-rows: 80px auto;
+    grid-template-areas: "aside" "main"
 }
 
 p a{
@@ -42,6 +45,7 @@ aside{
     grid-template-columns: auto 50px;
     width: 100%;
     padding: 1em;
+    grid-area: aside;
 }
 
 #menuIcon{
@@ -50,10 +54,18 @@ aside{
     top:13%;
     width: 40px;
     height: auto;
+    z-index: 10000;
 }
 
-#menuIconTablet{
-    display:none;
+#burger div{
+    width: 35px;
+    height: 4px;
+    background-color: rgb(255,255,255);
+    margin: 7px;
+    z-index: 10000;
+    position: relative;
+    top: 0px;
+    left: 3px;
 }
 
 #logo{
@@ -76,8 +88,8 @@ aside .resumeBox{
     text-decoration: none;
     color: black;
     font-weight: 100;
-    line-height: 2.4;
-    font-size: 17px;
+    line-height: 3.4;
+    font-size: 20px;
 }
 
 #navigation li{
@@ -88,24 +100,58 @@ aside .resumeBox{
     z-index: 100;
     font-family: 'ralewayregular', 'Arial', sans-serif;
     background-color: none;
+    position: relative;
+    top: 10%;
+    right: 10%;
 }
 
 .active{
-    text-align: left;
+    text-align: right;
     position: relative;
-    width: 50%;
+    width: 0%;
     height: 100%;
     position: absolute;
     background-color:#E0E6FF;
     display: block;
     z-index: 100;
     top: 0;
-    left: 0;
+    right: 0;
     padding: 5px 0;
 }
 
+@keyframes navAppear{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
+}
+
+@keyframes navDisappear{
+    from{
+        width: 60%;
+    }
+    to{
+        width: 0%;
+    }
+}
+
+#exit{
+    /*exit icon*/
+    position: absolute;
+    float: right;
+    width: 40px;
+    height: auto;
+    position: absolute;
+    right: 40px;
+    width: 35px;
+    height: auto;
+    top: 40px;
+}
+
 ul{
-    display: none; 
+    display: none;
     /* This allows it so that the lists don't show up if the class  'active' is removed from the html */
     /*The reason that this does not make the list disappear when the class is 
     there is because ul is less specific css than calling it by the class name. So in that case it doesn't apply display
@@ -117,11 +163,12 @@ main{
     font-family: 'ralewayregular', 'Arial', sans-serif;
     position: fixed;
     width: 100%;
-    top: 8.5%;
+    top: 70px;
     left:0%;
-    height: 91.5%;
+    height: 100%;
     overflow-y: scroll; 
     overflow-x: hidden; 
+    grid-area: main;
 }
 
 .subsection h2{
@@ -553,16 +600,6 @@ padding-bottom: 3.4em;
         display:none;
     }
 
-    #menuIconTablet{
-        display:block;
-        cursor:pointer;
-        position: relative;
-        top:13%;
-        width: 60px;
-        height: auto;
-        z-index:10000;
-        padding: auto;
-    }
 
     .contactInfo {
         position: fixed;
@@ -805,24 +842,13 @@ padding-bottom: 3.4em;
 
 }/* media 700px  */
 
-/* iPhone SE / 5 */
-@media screen and (max-width: 325px){
-    #nameBar{
-        font-size: 21px;
-    }
-
-    #menuIcon{
-        height: 20px;
-        position: relative;
-        left: 15px;
-    }
-}
 
 @media screen and (min-width: 950px){
     body{
         padding:2.0em;
         display: grid;
         grid-template-columns: 250px auto;
+        grid-template-rows: 1fr; 
         grid-template-areas: "aside main";
     }
 
@@ -935,10 +961,6 @@ padding-bottom: 3.4em;
 
     #menuIcon{
         display: none;
-    }
-
-    #menuIconTablet{
-        display:none;
     }
 
     #navigation li {
