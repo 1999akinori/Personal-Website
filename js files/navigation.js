@@ -1,7 +1,7 @@
 //Create a function that allows the user to click the menu and nav pops up
 let menu = document.querySelector('ul');
 let icon = document.querySelector('#burger');
-console.log(menu.classList);
+let navtab = document.querySelectorAll('li');
 
 
 const popUpSideBar = function(e) {
@@ -14,6 +14,9 @@ const popUpSideBar = function(e) {
     }else{
         menu.classList.toggle('active');
         menu.style.animation = "navAppear 0.7s ease forwards" 
+        navtab.forEach((item, index) =>{
+            item.style.animation = `increaseOpacity 0.2s ease forwards ${index/7 + 0.5}s` 
+        });
         e.preventDefault(); //prevents the browser from reloading
     }
 
@@ -23,8 +26,6 @@ icon.addEventListener('click', popUpSideBar);
 
 
 //navigation tab effects
-console.log(document.querySelectorAll('li'));
-let navtab = document.querySelectorAll('li');
 
 navtab.forEach(function(element){
     element.onmouseover = function(){

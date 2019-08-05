@@ -1,1 +1,302 @@
-error logs
+For now I will be removing this section of the website that describes my personal stuff
+
+
+                    <div id="aboutme" class="subsection">
+                            <div id="aboutmeIntro">
+                                    <h2>More about me...</h2>
+                                <p>All my passions and aspirations can be generalized into three words: observe, understand, and change</p>
+                            </div>
+                            <div id="observe" class="verb">
+                                <h3>Observe</h3>
+                                <p>I come from a family that moves frequently, so I have been lucky enough to live in and observe 7 different 
+                                    countries: Swizterland, Peru, Japan, Nepal, Costa Rica, Canada, and Chile. Since I was a kid, I've had a fascination with insects, 
+                                    especially beetles, obsessing over their armor-like body and unique behavior. 
+                                    My love for nature and wildlife, has led me to my recent attempt 
+                                    to capture my observation through <a href="./photogallery.html">photography</a>. My attention to detail and observation 
+                                    are also portrayed in my drawings.</p>
+                            </div>
+                            <div id="observeImage" class="aboutmeImage">
+                                <img src="./image/observeImage.JPG">
+                            </div>
+                            <div id="understand" class="verb">
+                                <h3>Understand</h3>
+                                <p>
+                                    What I observe with my eyes, I try to understand.
+                                    My drive for learning and constant curiosity makes not knowing very very uncomfortable. Perhaps it is why physics has 
+                                    been my favorite course. Sharing my understanding through teaching gives me great fullfillment.
+                                    As I have grown, I have gained more of an appreciation for the unique cultures of countries around the world. 
+                                    The desire to understand these different cultures has added a new level of enjoyment to travelling and has motivated my 
+                                    desire to become fluent in Spanish and learn many other languages in the future.
+                                </p>
+                            </div>
+                            <div id="understandImage">
+                                <img src="image/understandImage.JPG" >
+                            </div>
+                            <div id="change" class="verb">
+                                <h3>Change</h3>
+                                <p>
+                                    I feel like my whole life has prepared me to adapt to external change. As I changed countries, I've had to make new connections, learn a new language,
+                                    adapt to a completely new culture, give up on good Japanese food, give up on good wifi, and more. While I still have fears and 
+                                    anxiety about change, I am confident I will find a solution to whatever difficulty I may face.
+                                    Internally, I am always looking to improve myself. The growth I made through my fitness journey, kickstarted my obssession for learning and self-improvement.
+                                    I chose engineering because I want to be an agent of positive change. While it may be 10-20 years down the line, I want to see my design and innovation change lives.
+                                </p>
+                            </div>
+                            <div id="changeImage">
+                                <img src="image/changeImage.JPG" >   
+                            </div>
+                        </div>
+            
+
+
+            /* aboutme */
+
+#aboutme{
+    position: relative;
+    bottom: 0px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Playfair Display','ralewayregular', 'Arial', sans-serif;
+}
+
+#aboutmeIntro p{
+    text-align: center;
+    padding: 2.4em;
+    font-style: italic;
+}
+
+#aboutme h3{
+    font-style: bold;
+    position: relative;
+    padding: 0 1.9em;
+    margin: 0;
+    position: relative;
+    left:0;
+    bottom:0;
+    font-family: 'Playfair Display','ralewayregular', 'Arial', sans-serif;
+    font-size: 23px;
+    width: fit-content;
+}
+
+#aboutme p{
+    position: relative;
+    padding: 2.4em;
+    margin: 0 auto;
+    position: relative;
+}
+
+.aboutmeImage{
+    margin: 0 auto;
+}
+
+.verb{
+    padding-top:2.4em;
+    padding-bottom:2.4em;
+    margin: 0;
+}
+
+#aboutme .verb p{
+    padding: 1.4em 2.4em;
+    font-size: 13px;
+    line-height: 1.8;
+    max-height: 100%;
+}
+
+#aboutme img{
+    height: auto;
+    width: 100%;
+    display: block;
+    margin: auto auto;
+    top: 0;
+    position: relative;
+    object-fit: cover;
+}
+
+#observe{
+    background-color: #0B286A;
+    color: #FFF;
+}
+
+#observeImage{
+    background-color:   #0B286A;
+    width: 100%;
+}
+
+#understand{
+    background-color: #FFE65D;
+    color: #000;
+}
+
+#understandImage{
+    background-color: #FFE65D;
+}
+
+#change{
+    background-color: #FFC95D;
+    color: #000;
+}
+
+#changeImage{
+    background-color:#FFC95D;
+}
+
+/* Grid for the aboutme section */
+
+
+
+    #aboutme{
+        grid-area: leg;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 20% 25% 25% 30%;
+        grid-template-areas: 
+        "aboutme aboutme"
+        "observe obsImg"
+        "undImg understand"
+        "change chImg";
+    }
+
+    #aboutme .verb p {
+        padding: 1.4em 2.4em;
+        font-size: 13px;
+        line-height: 1.8;
+        max-height: 100%;
+    }
+
+    #aboutme h3 {
+        padding: 0 1.9em;
+        margin: 0;
+        font-size: 18px;
+        width: fit-content;
+    }
+
+    #aboutmeIntro{
+        grid-area: aboutme;
+    }
+
+    #observe{
+        grid-area: observe;
+    }
+
+    #observeImage{
+        grid-area: obsImg;
+    }
+
+    #understand{
+        grid-area: understand;
+    }
+
+    #understandImage{
+        grid-area: undImg;
+    }
+
+    #change{
+        grid-area: change;
+    }
+
+    #changeImage{
+        grid-area:chImg;
+    }
+
+    #aboutme img{
+        max-height: 100%;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+        display: block;
+        margin: auto auto;
+        top: 0;
+        position: relative;
+    }
+
+    .aboutmeImage{
+        display: block;
+        grid-column: 2/2;
+    }
+
+    #aboutmeIntro h2{
+        font-size: 45px;
+    }
+
+    #aboutmeIntro p{
+        font-size: 20px;
+        max-width: 600px;
+        margin: 30px auto;
+    }
+
+    #observeImage img{
+        position: relative;
+        top: 0;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+    }
+
+    #understandImage img{
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+    }
+
+    #changeImage img{
+        position: relative;
+        height: 100%;
+        max-width: 100%;
+        width: auto;
+    }
+
+
+
+
+
+
+
+
+    #aboutme{
+        grid-area: leg;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr auto auto auto;
+        grid-template-areas: 
+        "aboutme aboutme"
+        "observe obsImg"
+        "undImg understand"
+        "change chImg";
+    }
+
+    #aboutmeIntro p{
+        font-size: 20px;
+        max-width: 600px;
+        margin: 50px auto;
+    }
+
+    #aboutme .verb p {
+        padding: 1.4em 2.4em;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+    #aboutme h3 {
+        padding: 0 1.9em;
+        margin: 0;
+        position: relative;
+        font-size: 23px;
+    }
+
+    #observeImage img{
+        position: relative;
+        top: 0;
+        width: 100%;
+        float:right;
+    }
+
+    #understandImage img{
+        position: relative;
+    }
+
+    #changeImage img{
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }

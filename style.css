@@ -87,9 +87,27 @@ aside .resumeBox{
 .navtab{
     text-decoration: none;
     color: black;
-    font-weight: 100;
+    font-weight: 900;
     line-height: 3.4;
     font-size: 20px;
+}
+
+@keyframes increaseOpacity{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes decreaseOpacity{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
 }
 
 #navigation li{
@@ -102,7 +120,9 @@ aside .resumeBox{
     background-color: none;
     position: relative;
     top: 10%;
-    right: 10%;
+    left: 30%;
+    width: 120px;
+    opacity:0;
 }
 
 .active{
@@ -121,19 +141,19 @@ aside .resumeBox{
 
 @keyframes navAppear{
     from{
-        width: 0%;
+        width: 0px;
     }
     to{
-        width: 60%;
+        width: 200px;
     }
 }
 
 @keyframes navDisappear{
     from{
-        width: 60%;
+        width: 200px;
     }
     to{
-        width: 0%;
+        width: 0px;
     }
 }
 
@@ -409,106 +429,17 @@ padding-bottom: 3.4em;
     top: 20px;
 }
 
-/* aboutme */
 
-#aboutme{
-    position: relative;
-    bottom: 0px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    font-family: 'Playfair Display','ralewayregular', 'Arial', sans-serif;
-}
-
-#aboutmeIntro p{
-    text-align: center;
-    padding: 2.4em;
-    font-style: italic;
-}
-
-#aboutme h3{
-    font-style: bold;
-    position: relative;
-    padding: 0 1.9em;
-    margin: 0;
-    position: relative;
-    left:0;
-    bottom:0;
-    font-family: 'Playfair Display','ralewayregular', 'Arial', sans-serif;
-    font-size: 23px;
-    width: fit-content;
-}
-
-#aboutme p{
-    position: relative;
-    padding: 2.4em;
-    margin: 0 auto;
-    position: relative;
-}
-
-.aboutmeImage{
-    margin: 0 auto;
-}
-
-.verb{
-    padding-top:2.4em;
-    padding-bottom:2.4em;
-    margin: 0;
-}
-
-#aboutme .verb p{
-    padding: 1.4em 2.4em;
-    font-size: 13px;
-    line-height: 1.8;
-    max-height: 100%;
-}
-
-#aboutme img{
-    height: auto;
-    width: 100%;
-    display: block;
-    margin: auto auto;
-    top: 0;
-    position: relative;
-    object-fit: cover;
-}
-
-#observe{
-    background-color: #0B286A;
-    color: #FFF;
-}
-
-#observeImage{
-    background-color:   #0B286A;
-    width: 100%;
-}
-
-#understand{
-    background-color: #FFE65D;
-    color: #000;
-}
-
-#understandImage{
-    background-color: #FFE65D;
-}
-
-#change{
-    background-color: #FFC95D;
-    color: #000;
-}
-
-#changeImage{
-    background-color:#FFC95D;
-}
 
 #contact{
     position: relative;   
     width: 100%;
-    margin: 10px auto;
+    margin: 80px auto;
     text-align: center;
 }
 
 #contact h2{
-    margin: 20px 0;
+    margin: 60px 0;
     font-family: 'Kaushan Script','ralewayregular', 'Arial', sans-serif;
     font-size: 28px;
 }
@@ -527,6 +458,7 @@ padding-bottom: 3.4em;
     top: 91.5%;
     display: none;
     grid-template-columns: 33.333% 33.3333% 33.333%;
+    margin-bottom: 50px;
 }
 
 .contactIcon{
@@ -534,7 +466,7 @@ padding-bottom: 3.4em;
     width: 100%;
     height: auto;
     display: grid;
-    left: 6.5%;
+    left: 7.5%;
     top: 50px;
     grid-template-columns: 33.333% 33.3333% 33.333%;
 }
@@ -586,6 +518,10 @@ padding-bottom: 3.4em;
 
     aside img{
         top:20%;
+    }
+
+    .active{
+        font-size: 20px;
     }
 
     .contactInfo a img{
@@ -693,112 +629,7 @@ padding-bottom: 3.4em;
         grid-area: blog;
     }
 
-    /* Grid for the aboutme section */
-
-
-
-    #aboutme{
-        grid-area: leg;
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: 20% 25% 25% 30%;
-        grid-template-areas: 
-        "aboutme aboutme"
-        "observe obsImg"
-        "undImg understand"
-        "change chImg";
-    }
-
-    #aboutme .verb p {
-        padding: 1.4em 2.4em;
-        font-size: 13px;
-        line-height: 1.8;
-        max-height: 100%;
-    }
-
-    #aboutme h3 {
-        padding: 0 1.9em;
-        margin: 0;
-        font-size: 18px;
-        width: fit-content;
-    }
-
-    #aboutmeIntro{
-        grid-area: aboutme;
-    }
-
-    #observe{
-        grid-area: observe;
-    }
-
-    #observeImage{
-        grid-area: obsImg;
-    }
-
-    #understand{
-        grid-area: understand;
-    }
-
-    #understandImage{
-        grid-area: undImg;
-    }
-
-    #change{
-        grid-area: change;
-    }
-
-    #changeImage{
-        grid-area:chImg;
-    }
-
-    #aboutme img{
-        max-height: 100%;
-        height: 100%;
-        max-width: 100%;
-        width: auto;
-        display: block;
-        margin: auto auto;
-        top: 0;
-        position: relative;
-    }
-
-    .aboutmeImage{
-        display: block;
-        grid-column: 2/2;
-    }
-
-    #aboutmeIntro h2{
-        font-size: 45px;
-    }
-
-    #aboutmeIntro p{
-        font-size: 20px;
-        max-width: 600px;
-        margin: 30px auto;
-    }
-
-    #observeImage img{
-        position: relative;
-        top: 0;
-        height: 100%;
-        max-width: 100%;
-        width: auto;
-    }
-
-    #understandImage img{
-        position: relative;
-        height: 100%;
-        max-width: 100%;
-        width: auto;
-    }
-
-    #changeImage img{
-        position: relative;
-        height: 100%;
-        max-width: 100%;
-        width: auto;
-    }
-
+    
     /* Grid for contact */
 
     #contact{
@@ -852,6 +683,14 @@ padding-bottom: 3.4em;
         grid-template-areas: "aside main";
     }
 
+    #burger{
+        display:none;
+    }
+
+    #navigation li{
+        opacity: 1;
+        left:10%;
+    }
     
     ul{
         display:block;
@@ -966,7 +805,9 @@ padding-bottom: 3.4em;
     #navigation li {
         padding: 5px;
         font-size: 12px;
-        margin: 0;
+        margin: 0 0 0 0;
+        width: 100%;
+        left: 0%;
     }
 
     .navtab {
@@ -1053,54 +894,6 @@ padding-bottom: 3.4em;
 
     #inDocResume2{
         display: none;
-    }
-
-    #aboutme{
-        grid-area: leg;
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr auto auto auto;
-        grid-template-areas: 
-        "aboutme aboutme"
-        "observe obsImg"
-        "undImg understand"
-        "change chImg";
-    }
-
-    #aboutmeIntro p{
-        font-size: 20px;
-        max-width: 600px;
-        margin: 50px auto;
-    }
-
-    #aboutme .verb p {
-        padding: 1.4em 2.4em;
-        font-size: 13px;
-        line-height: 1.8;
-    }
-
-    #aboutme h3 {
-        padding: 0 1.9em;
-        margin: 0;
-        position: relative;
-        font-size: 23px;
-    }
-
-    #observeImage img{
-        position: relative;
-        top: 0;
-        width: 100%;
-        float:right;
-    }
-
-    #understandImage img{
-        position: relative;
-    }
-
-    #changeImage img{
-        position: relative;
-        width: 100%;
-        height: 100%;
     }
 
     #contact{
