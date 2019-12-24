@@ -1,6 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="500" height="527" viewBox="0 0 500 527">
-  <g id="facebookIcon" transform="translate(-1179 -3126)">
-    <circle id="facebookIcon-2" data-name="facebookIcon" cx="250" cy="250" r="250" transform="translate(1179 3126)" fill="#9e8500"/>
-    <text id="f" transform="translate(1359 3505)" fill="#fff" font-size="336" font-family="Meiryo-Bold, Meiryo" font-weight="700"><tspan x="0" y="0">f</tspan></text>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="527" viewBox="0 0 500 527"><g transform="translate(-1179 -3126)"><circle cx="250" cy="250" r="250" transform="translate(1179 3126)" fill="#1377e8"/><text transform="translate(1359 3505)" fill="#fff" font-size="336" font-family="Meiryo-Bold, Meiryo" font-weight="700"><tspan x="0" y="0">f</tspan></text></g></svg>

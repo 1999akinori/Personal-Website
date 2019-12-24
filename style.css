@@ -1,4 +1,7 @@
-/* General */
+/* General
+    This is a general style that applies to all web apges
+
+*/
 * {
     margin: 0;
     padding: 0;
@@ -66,6 +69,7 @@ aside{
     position: relative;
     top: 0px;
     left: 3px;
+    transition: all 0.3s ease;
 }
 
 #logo{
@@ -78,7 +82,7 @@ aside{
     font-size: 27px;
     font-weight: 600;
     margin: 0 0 0 5px;
-    font-family: 'Kaushan Script','ralewayregular', 'Arial', sans-serif;
+    font-family: 'Kaushan Script','Titillium Web', 'Arial', sans-serif;
 }
 
 aside .resumeBox{
@@ -86,7 +90,7 @@ aside .resumeBox{
 }
 .navtab{
     text-decoration: none;
-    color: black;
+    color: #1377e8;
     font-weight: 900;
     line-height: 3.4;
     font-size: 20px;
@@ -116,7 +120,7 @@ aside .resumeBox{
     padding: 5px;
     margin: 0;
     z-index: 100;
-    font-family: 'ralewayregular', 'Arial', sans-serif;
+    font-family: 'Titillium Web', 'Arial', sans-serif;
     background-color: none;
     position: relative;
     top: 10%;
@@ -157,6 +161,20 @@ aside .resumeBox{
     }
 }
 
+.flipflip #line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+    background-color: #1377e8;
+}
+
+.flipflip #line2{
+    opacity: 0;
+}
+
+.flipflip #line3{
+    transform: rotate(45deg) translate(-9px, -11px);
+    background-color: #1377e8;
+}
+
 #exit{
     /*exit icon*/
     position: absolute;
@@ -180,202 +198,14 @@ ul{
 
 main{
     background-color: white;
-    font-family: 'ralewayregular', 'Arial', sans-serif;
-    position: fixed;
+    font-family: 'Titillium Web', 'Arial', sans-serif;
     width: 100%;
-    top: 70px;
-    left:0%;
     height: 100%;
     overflow-y: scroll; 
     overflow-x: hidden; 
     grid-area: main;
 }
 
-.subsection h2{
-    margin-top: 25px;
-    margin-bottom: 25px;
-    font-size: 30px;
-    font-family: 'Kaushan Script','ralewayregular', 'Arial', sans-serif;
-}
-
-#name{
-    display:none;
-}
-
-#selfTitle{
-    color: #1C439E;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 20px;
-    font-size: 15px;
-    font-weight: 900;
-    line-height: 2;
-    font-family: 'Kaushan Script';
-    letter-spacing: 2px;
-    word-spacing: 2px;
-}
-
-.resumeBox{
-    height: 8%;
-    text-align: center;
-}
-
-
-
-#header{
-padding-top: 1.4em;
-padding-bottom: 3.4em;
-}
-
-/* Picture of myself */
-
-
-#profilePicture{
-    padding: 0;
-    margin: 60px auto;
-    position: relative;
-    display: block;
-    text-align: center;
-    transform: rotate(90deg);
-    height: auto;
-    width: 320px;
-    object-fit: cover;
-
-}
-
-#miniBio p{
-    text-align: left;
-    font-size: 10px;
-    font-style: italic;
-    margin: 10px auto;
-    width: 220px;
-}
-
-
-#intro{
-    position: relative;
-    font-size: 14px;
-    line-height: 1.4;
-    padding: 2.0em;
-    padding-top: 1em;
-    padding-bottom: 0;
-    margin: 5px auto;
-    position: relative;
-    bottom: 0;
-    margin-bottom: 40px;
-}
-
-/* Description */
-
-.description{
-    margin: 30px 0;
-}
-
-.description h3{
-    margin: 5px 40px;
-    color: #1C439E;
-    font-size: 18px;
-    margin-top: 20px;
-    
-}
-
-.description h4{
-    margin: 5px 40px;
-    color: #BF8308;
-    font-size: 16px;
-}
-
-.description p{
-    margin: 10px 40px;
-    font-size: 15px;
-    line-height: 1.4;
-}
-
-.description img{
-    margin: 10px auto;
-    display: block;
-    height: 200px;
-    width: 300px;
-    left: 0;
-    position: relative;
-    border-radius: 15px;
-    cursor: pointer;
-    text-align: center;
-    margin-top: 30px;
-    object-fit: cover;
-}
-
-/* Blog */
-#blog{
-    height: auto;
-    background: #f1f1f9;
-    display:none;
-}
-
-#blog h2{
-    padding:25px 0; 
-    margin: 0;
-}
-
-#flexbox{
-    display: flex;
-    overflow-x: scroll;
-}
-
-#flexbox .description{
-    margin-top: 5px;
-}
-
-#flexbox .description img{
-    margin: 10px auto; /*margin: 10px 10px;*/
-    margin-top: 0;
-    display: block;
-    height: 150px;
-    width: 300px;
-    left: 0;
-    position: relative;
-    border-radius: 15px;
-    cursor: pointer;
-    text-align: center;
-    object-fit: cover;
-}
-
-#flexbox .description h3{
-    font-size: 18px;
-    margin: 10px 40px; /* margin: 10px 20px; */
-}
-
-#flexbox .description p{
-    margin: 10px 40px; /* margin: 10px 20px; */
-}
-
-
-
-/* Experience */
-
-#experience{
-    padding-top: 25px;
-    padding-bottom: 15px;
-    background-color: #F4F4F4;
-}
-
-.subsection h2{
-    text-align: center;
-}
-
-/* Projects */
-#projects{
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: #E7E7E7;
-}
-
-/* Education */
-#education {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: #DEDEDE;
-}
 
 .cta {
     background-color: rgb(19,119,232);
@@ -389,7 +219,7 @@ padding-bottom: 3.4em;
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
-    top: 8%;
+    bottom:300%;
     box-shadow: none;
     transition: padding 1s;
 }
@@ -429,8 +259,6 @@ padding-bottom: 3.4em;
     top: 20px;
 }
 
-
-
 #contact{
     position: relative;   
     width: 100%;
@@ -440,7 +268,7 @@ padding-bottom: 3.4em;
 
 #contact h2{
     margin: 60px 0;
-    font-family: 'Kaushan Script','ralewayregular', 'Arial', sans-serif;
+    font-family: 'Kaushan Script','Titillium Web', 'Arial', sans-serif;
     font-size: 28px;
 }
 
@@ -487,18 +315,18 @@ padding-bottom: 3.4em;
     border-radius: 1000px;
 }
 
-#facebook{
+.facebook{
     display: grid;
     grid-column: 1;
 
 }
 
-#linkedin{
+.linkedin{
     display: grid;
     grid-column: 2;
 }
 
-#github{
+.github{
     display: grid;
     grid-column: 3;
 }
@@ -508,7 +336,7 @@ padding-bottom: 3.4em;
 }
 
 /* Tablet view */
-@media (min-width: 650px){ 
+@media (min-width: 750px){ 
     /* small adjustments */
     ::-webkit-scrollbar {
         width:0;
@@ -522,6 +350,10 @@ padding-bottom: 3.4em;
 
     .active{
         font-size: 20px;
+    }
+
+    #burger div{
+        background-color: #1377e8;
     }
 
     .contactInfo a img{
@@ -543,375 +375,4 @@ padding-bottom: 3.4em;
         top: 92.5%;
     }
 
-    /* Layout of page with CSS grid */
-    main{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, auto);
-        grid-template-areas:
-            "head"
-            "body"
-            "leg"
-            "foot";
-        width: 100%;
-        top: 0;
-        left:0%;
-        height: 100%;
-    }
-
-    
-
-    /* Grid for the header section Nested grid*/
-    #header{
-        grid-area: head;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-areas: 
-        "name profile"
-        "Intro profile"
-        "Intro profile"
-        "resume title";
-    }
-
-    #name{
-        grid-area: name;
-        display: block;
-        font-family: 'Kaushan Script','ralewayregular', 'Arial', sans-serif;
-        font-size: 60px;
-        text-align: center;
-        padding: 20px;
-        padding-top: 40px;
-        white-space: nowrap;
-    }
-
-    #profilePicture{
-        grid-area: profile;
-        top: 15%;
-    }
-
-    #intro{
-        grid-area: Intro;
-    }
-
-    .resumeBox{
-        grid-area: resume;
-    }
-
-    #selfTitle{
-        grid-area: title;
-    }
-    
-    /* Grid for the body section */
-    #body{
-        grid-area: body;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: 
-        "exp proj"
-        "exp edu"; /*"blog edu"*/
-    }
-
-    #experience{
-        grid-area: exp;
-    }
-
-    #projects{
-        grid-area: proj;
-    }
-
-    #education{
-        grid-area: edu;
-    }
-
-    #blog{
-        grid-area: blog;
-    }
-
-    
-    /* Grid for contact */
-
-    #contact{
-        grid-area: foot;
-        grid-template-rows: 1fr  1fr 1fr;
-        grid-template-areas: 
-        "title"
-        "description"
-        "resume";
-    }
-
-    #contact h2{
-        grid-area: title;
-        font-size: 35px;
-    }
-
-    #contact p{
-        grid-area: description;
-        font-size: 20px;
-    }
-
-    .cta3{
-        padding: 20px 80px;
-        font-size: 20px;
-    }
-
-    .contactIcon{
-        left:11%;
-        top: 16%;
-    }
-
-    .contactIcon a{
-        height:60px;
-        width: 60px;
-    }
-
-    .contactIcon a img{
-        height:60px;
-        width: 60px;
-    }
-
 }/* media 700px  */
-
-
-@media screen and (min-width: 950px){
-    body{
-        padding:2.0em;
-        display: grid;
-        grid-template-columns: 250px auto;
-        grid-template-rows: 1fr; 
-        grid-template-areas: "aside main";
-    }
-
-    #burger{
-        display:none;
-    }
-
-    #navigation li{
-        opacity: 1;
-        left:10%;
-    }
-    
-    ul{
-        display:block;
-    }
-
-    aside{
-        background-color: white;
-        position: relative;
-        opacity: 0.8;
-        width: 100%;
-        height: 100%;
-        grid-area: aside;
-        display: grid;
-        grid-template-rows: 30% 40% 15% 15%;
-        grid-template-columns: 1fr;
-        padding: 0;
-        grid-template-areas: "name" "nav" "resume" "contact";
-    }
-
-
-    aside figure{
-        grid-area: name;
-        width: 100%;
-    }
-
-    nav{
-        grid-area: nav;
-    }
-
-    aside .resumeBox{
-        display: inline-block;
-        white-space: nowrap;
-        grid-area: resume;
-        width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    width: 225px;
-    position: relative;
-    top: 50%;
-    }
-
-    footer{
-        display:block;
-    }
-
-    .contactInfo{
-        grid-area: contact;
-        position: relative;
-        display: grid;
-        width: 100%;
-        height: 7.5%;
-        left: 5.5%;
-        top: 10%;
-    }
-
-    
-     .contactInfo a{
-         width: 40px;
-         height: 40px;
-     }
-    
-    .contactInfo a img{
-        height: 40px;
-        width: 40px;
-    }
-    figure{
-        text-align: center;
-    }
-
-    #logo{
-        border-radius: 50%;
-        background: skyblue;
-        width: 50px;
-        height:50px;
-        display: block;
-        margin: 0 auto;
-        position: relative;
-        top: 20%;
-    }
-
-    #header{
-        grid-area: head;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-template-areas: 
-        "name profile"
-        "Intro profile"
-        "Intro title";
-    }
-
-    #profilePicture{
-        grid-area: profile;
-        top: 10%;
-    }
-
-    #selfTitle{
-        grid-area: title;
-    }
-
-    #nameBar{
-        display:block;
-        color: black;
-        position: relative;
-        top: 35%;
-    }
-
-    #menuIcon{
-        display: none;
-    }
-
-    #navigation li {
-        padding: 5px;
-        font-size: 12px;
-        margin: 0 0 0 0;
-        width: 100%;
-        left: 0%;
-    }
-
-    .navtab {
-        font-weight: 200;
-        line-height: 2.0;
-        font-size: 15px;
-        position: relative;
-        left: 13%;
-    }
-
-    nav{
-        padding: 10px 0;
-    }
-
-    .cta{
-        top:0;
-    }
-
-    main{
-        grid-area: main;
-        width: 100%;
-        top: 0;
-        left:0;
-        height: 100%;
-    
-        background-color: white;
-        position: relative;
-    }
-
-    #body{
-        grid-area: body;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: /*300px*/ auto auto auto;
-        grid-template-areas: 
-        /* "blog" */
-        "exp"
-        "proj"
-        "edu";
-    }
-
-    .description{
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: auto;
-        grid-template-areas: 
-        "img descriptionContent";
-    }
-
-    .description img{
-        grid-area: img;
-    }
-
-    .subsectionContent{
-        grid-area: descriptionContent;
-    }
-    
-        ::-webkit-scrollbar {
-            width:0;
-            background: transparent;
-            /* This will make the scroll bar transparent */
-        }
-
-     #selfTitle{
-        position: relative;
-        top: 15%;
-    }
-
-    #intro {
-        font-size: 16px;
-        line-height: 2;
-        padding: 2.0em;
-        padding-top: 1em;
-        margin: 5px auto;
-        position: relative;
-        bottom: 0;
-        margin-bottom: 40px;
-        left: 7%;
-    }
-   
-    #inDocResume1{
-        display: none;
-    }
-
-    #inDocResume2{
-        display: none;
-    }
-
-    #contact{
-        height: 300px;
-    }
-
-    #contact h2{
-        grid-area: title;
-        font-size: 35px;
-    }
-
-    #contact p{
-        grid-area: description;
-        font-size: 20px;
-    }
-
-    .contactIcon{
-        display: none;
-    }
-}
-

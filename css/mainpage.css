@@ -1,0 +1,607 @@
+/*
+    This styling applies to index.html and the photogallery.html
+*/
+
+main{
+    position: fixed;
+    top: 70px;
+    left:0%;
+}
+
+.subsection h2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: 'Kaushan Script','Titillium Web', 'Arial', sans-serif;
+}
+
+#name{
+    display:none;
+}
+
+#selfTitle{
+    color: #1C439E;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.7;
+    font-family: 'Kaushan Script';
+    letter-spacing: 1px;
+}
+
+#selfTitle2{
+    color: #1C439E;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 1.7;
+    font-family: 'Kaushan Script';
+    letter-spacing: 1px;
+    display: none;
+}
+
+#facts ul{
+    display: block;
+}
+
+#facts li{
+    margin: 10px auto;
+    line-height: 1.3;
+}
+
+.resumeBox{
+    height: 8%;
+    text-align: center;
+}
+
+#header{
+padding-top: 1.4em;
+padding-bottom: 3.4em;
+}
+
+/* Picture of myself */
+
+
+#profilePicture{
+    padding: 0;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom:30px;
+    position: relative;
+    display: block;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+#miniBio p{
+    text-align: left;
+    font-size: 10px;
+    font-style: italic;
+    margin: 10px auto;
+    width: 220px;
+}
+
+
+#intro{
+    position: relative;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 2.0em;
+    padding-top: 1em;
+    padding-bottom: 0;
+    margin: 5px auto;
+    position: relative;
+    bottom: 0;
+    margin-bottom: 40px;
+}
+
+/* Description */
+
+.description{
+    margin: 60px 0;
+}
+
+.description h3{
+    margin: 5px 40px;
+    color: #1C439E;
+    font-size: 18px;
+    margin-top: 20px;
+    
+}
+
+.description h4{
+    margin: 5px 40px;
+    color: #BF8308;
+    font-size: 16px;
+}
+
+.description p{
+    margin: 10px 40px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.description img{
+    margin: 10px auto;
+    display: block;
+    height: 200px;
+    width: 300px;
+    left: 0;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 30px;
+    object-fit: cover;
+}
+
+/* Blog */
+#blog{
+    height: auto;
+    background: #f1f1f9;
+    display:none;
+}
+
+#blog h2{
+    padding:25px 0; 
+    margin: 0;
+}
+
+#flexbox{
+    display: flex;
+    overflow-x: scroll;
+}
+
+#flexbox .description{
+    margin-top: 5px;
+}
+
+#flexbox .description img{
+    margin: 10px auto; /*margin: 10px 10px;*/
+    margin-top: 0;
+    display: block;
+    height: 150px;
+    width: 300px;
+    left: 0;
+    position: relative;
+    border-radius: 15px;
+    cursor: pointer;
+    text-align: center;
+    object-fit: cover;
+}
+
+#flexbox .description h3{
+    font-size: 18px;
+    margin: 10px 40px; /* margin: 10px 20px; */
+}
+
+#flexbox .description p{
+    margin: 10px 40px; /* margin: 10px 20px; */
+}
+
+
+
+/* Experience */
+
+#experience{
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: #F4F4F4;
+}
+
+.subsection h2{
+    text-align: center;
+}
+
+/* Projects */
+#projects{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #E7E7E7;
+}
+
+/* Education */
+#education {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: #DEDEDE;
+}
+
+/* Tablet view */
+@media (min-width: 750px){
+    /* Layout of page with CSS grid */
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas:
+            "head"
+            "body"
+            "leg"
+            "foot";
+        width: 100%;
+        top: 0;
+        left:0%;
+        height: 100%;
+    }
+
+    
+
+    /* Grid for the header section Nested grid*/
+    #header{
+        grid-area: head;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 50px 60px auto auto;
+        grid-template-areas: "white white" "name profile" "Intro title" "Intro resume";
+    }
+
+    #name{
+        grid-area: name;
+        display: block;
+        font-family: 'Kaushan Script','Titillium Web', 'Arial', sans-serif;
+        font-size: 40px;
+        white-space: nowrap;
+        margin: 0 30px;
+        left:7%;
+        position: relative;
+    }
+
+    #profilePicture{
+        grid-area: profile;
+        margin-top: 0;
+    }
+
+    #intro{
+        grid-area: Intro;
+    }
+
+
+
+    #facts{
+        grid-area: Facts;
+    }
+
+    .resumeBox{
+        grid-area: resume;
+    }
+
+    #selfTitle{
+        grid-area: title;
+        white-space: nowrap;
+        
+    }
+    
+    /* Grid for the body section */
+    #body{
+        grid-area: body;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "exp proj"
+        "exp edu"; /*"blog edu"*/
+    }
+
+    #experience{
+        grid-area: exp;
+    }
+
+    #projects{
+        grid-area: proj;
+    }
+
+    #education{
+        grid-area: edu;
+    }
+
+    #blog{
+        grid-area: blog;
+    }
+
+    
+    /* Grid for contact */
+
+    #contact{
+        grid-area: foot;
+        grid-template-rows: 1fr  1fr 1fr;
+        grid-template-areas: 
+        "title"
+        "description"
+        "resume";
+    }
+
+    #contact h2{
+        grid-area: title;
+        font-size: 35px;
+    }
+
+    #contact p{
+        grid-area: description;
+        font-size: 20px;
+    }
+
+    .cta3{
+        padding: 20px 80px;
+        font-size: 20px;
+    }
+
+    .contactIcon{
+        left:11%;
+        top: 16%;
+    }
+
+    .contactIcon a{
+        height:60px;
+        width: 60px;
+    }
+
+    .contactIcon a img{
+        height:60px;
+        width: 60px;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    
+    #header{
+        grid-area: head;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 50px 60px auto auto;
+        grid-template-areas: "white white"
+     "name profile"
+     "Intro profile"
+     "Intro title";
+     padding-top: 0;
+     padding-bottom: 0;
+    }
+
+    #profilePicture{
+        margin-top:60px;
+    }
+
+    #facts{
+        grid-area: Facts;
+        column-span: all;
+    }
+
+    #selfTitle{
+        grid-area: profile;
+    }
+
+    #nameBar{
+        display:block;
+        color: black;
+        position: relative;
+        top: 35%;
+    }
+
+    #menuIcon{
+        display: none;
+    }
+
+    #navigation li {
+        padding: 5px;
+        font-size: 12px;
+        margin: 0 0 0 0;
+        width: 100%;
+        left: 0%;
+    }
+
+    .navtab {
+        font-weight: 200;
+        line-height: 2.0;
+        font-size: 15px;
+        position: relative;
+        left: 13%;
+        color: black;
+    }
+
+    nav{
+        padding: 10px 0;
+    }
+
+    .cta{
+        top:0;
+    }
+
+    main{
+        grid-area: main;
+        width: 100%;
+        top: 0;
+        left:0;
+        height: 100%;
+    
+        background-color: white;
+        position: relative;
+    }
+
+    #body{
+        grid-area: body;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: /*300px*/ auto auto auto;
+        grid-template-areas: 
+        /* "blog" */
+        "exp"
+        "proj"
+        "edu";
+    }
+
+    .description{
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "img descriptionContent";
+    }
+
+    .description img{
+        grid-area: img;
+    }
+
+    .subsectionContent{
+        grid-area: descriptionContent;
+    }
+    
+        ::-webkit-scrollbar {
+            width:0;
+            background: transparent;
+            /* This will make the scroll bar transparent */
+        }
+
+    
+
+    #intro {
+        font-size: 16px;
+        line-height: 1.4;
+        padding: 2.0em;
+        padding-top: 1em;
+        margin: 5px auto;
+        position: relative;
+        bottom: 0;
+        margin-bottom: 40px;
+        left: 7%;
+    }
+}
+
+
+
+@media screen and (min-width: 1000px){
+    body{
+        padding:1.0em;
+        display: grid;
+        grid-template-columns: 250px auto;
+        grid-template-rows: 100%; 
+        grid-template-areas: "aside main";
+    }
+
+    #burger{
+        display:none;
+    }
+
+    #navigation li{
+        opacity: 1;
+    }
+    
+    ul{
+        display:block;
+    }
+
+    aside{
+        background-color: white;
+        position: relative;
+        opacity: 0.8;
+        width: 100%;
+        height: 100%;
+        grid-area: aside;
+        display: grid;
+        grid-template-rows: 30% 50% 7% 13%;
+        grid-template-columns: 1fr;
+        padding: 0;
+        grid-template-areas: "name" "nav" "resume" "contact";
+    }
+
+
+    aside figure{
+        grid-area: name;
+        width: 100%;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    aside .resumeBox{
+        display: inline-block;
+        white-space: nowrap;
+        grid-area: resume;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        width: 225px;
+        position: relative;
+        top: 0;
+    }
+
+    footer{
+        display:block;
+    }
+
+    .contactInfo{
+        grid-area: contact;
+        position: relative;
+        display: grid;
+        width: 100%;
+        height: 7.5%;
+        left: 5.5%;
+        top: 0;
+    }
+
+    
+     .contactInfo a{
+         width: 40px;
+         height: 40px;
+     }
+    
+    .contactInfo a img{
+        height: 40px;
+        width: 40px;
+    }
+    figure{
+        text-align: center;
+    }
+
+    #logo{
+        border-radius: 50%;
+        background: skyblue;
+        width: 55px;
+        height:55px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        top: 20%;
+    }
+   
+    #inDocResume1{
+        display: none;
+    }
+
+    #inDocResume2{
+        display: none;
+    }
+
+    #contact{
+        height: 300px;
+    }
+
+    #contact h2{
+        grid-area: title;
+        font-size: 35px;
+    }
+
+    #contact p{
+        grid-area: description;
+        font-size: 20px;
+    }
+
+    .contactIcon{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .subsectionContent{
+        position: relative;
+        left:-5%;
+    }
+
+    .description img{
+        left: 5%;
+    }
+}
