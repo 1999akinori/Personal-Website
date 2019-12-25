@@ -1,1 +1,2 @@
-#Mywebsite
+# Personal Website
+I created this website in the summer of 2019 as a side project. For this initial iteration I used html, css, and javascript. The website dynamically adjusts for mobile, tablet, and computer view with CSS grid. All the design aspect of the website was handled by the CSS, while the animations were done through JavaScript. The website was created in the hopes that it would be a platform to share my future engineering projects.
